@@ -131,12 +131,12 @@ const INDEPENDENCE_RULES =
     "Fidelity check: every character acts only according to their established personality, knowledge, goals and history. " +
     "The user asking for something is never a reason by itself: the character needs a reason of their own, otherwise they question it, hesitate, set conditions or refuse, as that person really would. " +
     "Trivial everyday requests need no special reason. A character who is naive, obedient or oblivious by design stays that way. " +
-    "If own_reason is 'none', the stance cannot be accept, and your reply must follow the stance. Never write the user's actions unless the user mentions a specific character or only names their persona.";
+    "If own_reason is 'none', the stance cannot be accept, and your reply must follow the stance. Never write only the actions of the user if the user mentioned the name of a specific character to perform an action or if, based on the events, it makes sense for the character's actions to be mentioned in the narration. Otherwise, you should narrate what happens to the user and those who are with them. If the user only mentions that they are observing, analyzing, etc., then only the characteristics of what they observe or analyze should be narrated.";
 
 const REMINDER_RULES =
     "Reminder: stay faithful to each character's established personality, knowledge, goals and history. " +
     "The user asking for something is not a reason by itself: before a character agrees to or does what the user asks, they need a reason of their own; otherwise they question it, hesitate, set conditions or refuse, as that person really would. " +
-    "Trivial everyday requests need no special reason, and a character who is naive or obedient by design stays that way. Never write the user's actions unless the user mentions a specific character or only names their persona.";
+    "Trivial everyday requests need no special reason, and a character who is naive or obedient by design stays that way. Never write only the actions of the user if the user mentioned the name of a specific character to perform an action or if, based on the events, it makes sense for the character's actions to be mentioned in the narration. Otherwise, you should narrate what happens to the user and those who are with them. If the user only mentions that they are observing, analyzing, etc., then only the characteristics of what they observe or analyze should be narrated.";
 
 const MIND_ASK =
     "MIND| user_wants: ... | card_basis: ... | own_reason: ... | stance: ... (fill every field with real content; allowed stances: accept, accept-with-condition, counter-offer, hesitate, refuse). " +
@@ -153,7 +153,7 @@ const NARRATION_NUDGE =
 
 // Nota corta (compact_note): se usa cuando el formato ya es estable
 const SHORT_RULES =
-    "Stay faithful to each character's card: they need a reason of their own to do what the user asks (if own_reason is 'none', the stance cannot be accept). Never write the user's actions unless the user mentions a specific character or only names their persona.";
+    "Stay faithful to each character's card: they need a reason of their own to do what the user asks (if own_reason is 'none', the stance cannot be accept). Never write only the actions of the user if the user mentioned the name of a specific character to perform an action or if, based on the events, it makes sense for the character's actions to be mentioned in the narration. Otherwise, you should narrate what happens to the user and those who are with them. If the user only mentions that they are observing, analyzing, etc., then only the characteristics of what they observe or analyze should be narrated.";
 const COMPACT_EVERY = 6; // la nota completa se repite en los turnos 1, 7, 13...
 const MIN_VISIBLE = 15; // menos caracteres visibles que esto = respuesta sin narración
 
